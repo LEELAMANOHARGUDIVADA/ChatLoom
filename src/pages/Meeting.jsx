@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt';
-import { useParams } from 'react-router-dom';
 
 function randomID(len) {
   let result = '';
@@ -22,7 +21,7 @@ export function getUrlParams(
 }
 
 const Meeting = () => {
-    const { id: roomID } = useParams()
+  const roomID = getUrlParams().get('roomID') || randomID(15);
 
 
   const myMeeting = async (element) => {

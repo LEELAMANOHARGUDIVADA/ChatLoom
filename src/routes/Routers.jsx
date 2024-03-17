@@ -15,7 +15,7 @@ const Routers = () => {
         <Route path='/sign-up' element={<Register />} />
         <Route path='/create-meeting' element={<CreateMeeting />} />
         <Route path='/join-meeting' element={<JoinMeeting />} />
-        <Route path='/meetings/:id/videoconference' element={<Meeting />} />
+        <Route path='/meetings/videoconference' element={<Meeting />} />
     </Routes>
   )
 }

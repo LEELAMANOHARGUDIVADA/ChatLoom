@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom"
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 import { IoArrowBackOutline } from "react-icons/io5";
 
 
 const CreateMeeting = () => {
     const [meetingName, setMeetingName] = useState('');
     const [meetingUsers, setMeetingUsers] = useState('');
-    const roomId = uuidv4();
+    // const roomId = uuidv4();
 
     {meetingUsers < 0 && setMeetingUsers(0)}
 
     const formHandler = (e) => {
         
         e.preventDefault();
-        window.location.href = `/meetings/roomID=${roomId}/videoconference`;
+        window.location.href = `/meetings/videoconference`;
         console.log(roomId)
     }
     
