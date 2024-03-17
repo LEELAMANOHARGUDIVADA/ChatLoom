@@ -4,13 +4,11 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa"
-import { Fade } from 'react-reveal';
 
 
 const Footer = () => {
   return (
     <div className='border-t border-slate-500'>
-        <Fade right duration={1500}>
         <div className='md:h-32 flex flex-col md:flex-row items-center justify-evenly'>
             <div>
                 <img src={logo} alt="logo" className='w-60' />
@@ -35,11 +33,8 @@ const Footer = () => {
                 
             </div>
         </div>
-        </Fade>
         <div className='text-center my-5'>
-            <Fade top duration={1500}>
             <h2 className='text-white'>Developed by Leela Manohar Gudivada</h2>
-            </Fade>
         </div>
     </div>
   )
