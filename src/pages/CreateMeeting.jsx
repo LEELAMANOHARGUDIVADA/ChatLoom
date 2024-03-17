@@ -14,7 +14,7 @@ const CreateMeeting = () => {
     const formHandler = (e) => {
         
         e.preventDefault();
-        window.location.href = `/meetings?roomID=${roomId}`;
+        window.location.href = `/meetings/roomID=${roomId}`;
         console.log(roomId)
     }
     
